@@ -13,7 +13,8 @@ def backupfile(src_path, dst_path):
         print(name)
         if name == 'RECYCLER' \
                 or name == 'Thumbs.db'\
-                or name == 'System Volume Information':
+                or name == 'System Volume Information'\
+                or name == '来文来电':
             pass
         else:
             abs_path = os.path.join(src_path,name) #拼接绝对路径
